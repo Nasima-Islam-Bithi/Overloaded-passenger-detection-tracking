@@ -78,7 +78,7 @@ In this project, we implemented four object detection models: **Faster R-CNN**, 
 #### 1. Faster R-CNN
 Faster R-CNN is known for its accuracy and is one of the most widely used models for object detection. Below is the output image generated using the Faster R-CNN model:
 
-![Faster R-CNN Output](frcnn/.png)
+![Faster R-CNN Output](images/frcnn.png)
 
 *The Faster R-CNN model effectively detected various objects with precise bounding boxes, showcasing its robust performance in complex scenes.*
 
