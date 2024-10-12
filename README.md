@@ -1,4 +1,4 @@
-# Object Detection and Tracking
+# Overloaded passengers detection and real-time tracking in Metrorail
 
 This project implements a real-time object detection and tracking system using deep learning model and OpenCV. The primary focus is on detecting people in a video file and tracking their movement within a defined region of interest (ROI).
 
