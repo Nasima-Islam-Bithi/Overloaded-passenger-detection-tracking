@@ -9,6 +9,7 @@ This project implements a real-time object detection and tracking system using d
 - [Installation](#installation)
 - [Usage](#usage)
 - [Code Explanation](#code-explanation)
+- [output of models](#output-of-models)
 
 ## Introduction
 
