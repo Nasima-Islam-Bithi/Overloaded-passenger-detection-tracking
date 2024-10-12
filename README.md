@@ -9,7 +9,7 @@ This project implements a real-time object detection and tracking system using d
 - [Installation](#installation)
 - [Usage](#usage)
 - [Code Explanation](#code-explanation)
-- [output of models](#output-of-models)
+- [Output](#output)
 
 ## Introduction
 
@@ -69,3 +69,55 @@ The Tracker class is responsible for tracking detected person objects based on t
 - Region of Interest: Defined as a polygon to focus tracking efforts.
 - Video Processing: Continuously reads frames, performs object detection, and updates the tracker.
 - Counting: Maintains a count of detected individuals within the ROI and displays results in the video feed.
+
+## Output
+### Output
+
+In this project, we implemented four object detection models: **Faster R-CNN**, **SSD (Single Shot MultiBox Detector)**, **RetinaNet**, and **YOLO (You Only Look Once)**. Each model was evaluated on the same input images, and the following outputs were generated:
+
+#### 1. Faster R-CNN
+Faster R-CNN is known for its accuracy and is one of the most widely used models for object detection. Below is the output image generated using the Faster R-CNN model:
+
+![Faster R-CNN Output](frcnn/.png)
+
+*The Faster R-CNN model effectively detected various objects with precise bounding boxes, showcasing its robust performance in complex scenes.*
+
+---
+
+#### 2. SSD (Single Shot MultiBox Detector)
+SSD is designed for real-time object detection and is known for its balance between speed and accuracy. The output from the SSD model is shown below:
+
+![SSD Output](images/ssd.png)
+
+*The SSD model demonstrates impressive speed while maintaining a good level of accuracy, making it suitable for applications requiring quick inference times.*
+
+---
+
+#### 3. RetinaNet
+RetinaNet employs a unique focal loss function to address the class imbalance during training, which enhances its ability to detect small objects. Here is the output image generated from the RetinaNet model:
+
+![RetinaNet Output](images/retina.png)
+
+*The RetinaNet model showcases its capability to detect objects with varying sizes, particularly small objects, thanks to its advanced loss function.*
+
+---
+
+#### 4. YOLO (You Only Look Once)
+YOLO is renowned for its high speed and efficiency, processing images in real-time. Below is the output image produced by the YOLO model:
+
+![YOLO Output](images/yolo.png)
+
+*The YOLO model provides fast and accurate detections, making it highly effective for applications where speed is critical, such as video analysis and autonomous driving.*
+
+---
+
+### Summary of Results
+Each model has its strengths and weaknesses, as illustrated by their outputs. The choice of model depends on the specific requirements of the application, such as the need for speed versus the need for accuracy. The following table summarizes the performance characteristics of each model:
+
+| Model         | Speed           | Accuracy      | Notes                                          |
+|---------------|------------------|---------------|------------------------------------------------|
+| Faster R-CNN  | Moderate        | High          | Best for accuracy-focused applications         |
+| SSD           | Fast             | Moderate      | Balances speed and accuracy                    |
+| RetinaNet     | Moderate         | High          | Effective for detecting small objects          |
+| YOLO          | Very Fast        | Moderate      | Excellent for real-time applications           |
+
